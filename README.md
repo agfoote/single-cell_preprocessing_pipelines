@@ -15,7 +15,6 @@ Each workflow is fully scripted (R Markdown for R, Jupyter Notebook for Scanpy
 | **Assess mitochondrial content**          | `PercentageFeatureSet(..., pattern = "^MT-")`          | `adata.obs['percent_mt'] = sc.pp.calculate_qc_metrics(adata, percent_top=None)['pct_counts_mt']` |
 | **Visualize metadata distributions**      | `VlnPlot()` · `FeatureScatter()`                       | `sc.pl.violin(adata, ...)` · `sc.pl.scatter(adata, ...)`     |
 | **Filter low‑quality cells & features**   | `subset(seurat_obj, subset = nFeature_RNA > X & percent.mt < Y)` | `adata = adata[adata.obs.n_genes > X & adata.obs.pct_counts_mt < Y]` |
-| **(Pre‑)Normalize raw counts**            | `SCTransform()` *or* `NormalizeData()`                | `sc.pp.normalize_total(adata); sc.pp.log1p(adata)`           |
 
 ### Section 2 – Doublet Detection 🔬
 
