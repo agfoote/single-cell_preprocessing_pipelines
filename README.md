@@ -3,11 +3,6 @@
 This repository provides a comprehensive pipeline for processing and analyzing single‑cell RNA‑sequencing data using either **R** or **Python/Scanpy**.  
 Each workflow is fully scripted (R Markdown for R, Jupyter Notebook for Scanpy), modular, and checkpointed so you can pick up from any stage without re‑running everything.  
 
-> *This file extends the original README by adding explicit steps for  
->  4️⃣ Normalization & log‑transformation,  
->  5️⃣ Mouse‑compatible cell‑cycle scoring, and  
->  6️⃣ Feature selection & dimensional reduction.*  
-
 ---
 
 ## Pipeline Overview 🚀
